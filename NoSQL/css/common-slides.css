@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Gabriela&text=%26%C2%A7|PT+Mono);
+
+body {
+    /*font-family: 'Droid Serif';*/
+    font-family: 'Bitter';
+}
+h1, h2, h3, h4, h5 {
+    /*font-family: 'Yanone Kaffeesatz';*/
+    font-family: 'Droid Serif';
+    font-weight: normal;
+    line-height: 1;
+    margin: 0.5em 0;
+}
+
+i.huge {
+  color: #b3b3b1;
+  font-size: 400px;
+  float: left;
+  padding-right: 40px;
+  margin-top:-25px;
+}
+.intro-img {
+  float:left;
+  margin-right: 15px;
+}
+.intro-img img {
+  width: 200px;
+}
+
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  /*Font*/
+  color: #666;
+  text-align: justify;
+  font-style: italic;
+
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  /*font-family: Georgia, serif;*/
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+tt, code, kbd, samp,
+.remark-code, .remark-inline-code {
+    font-family: "Operator Mono Book", "PT Mono", Monaco, Menlo, Consolas, monospace;
+}
+.remark-code, .remark-inline-code {
+    border-radius: 5px;
+    font-size: 16px;
+}
+.remark-inline-code {
+    background-color: #ddd;
+    padding: 3px 5px;
+}
+
+
+.remark-slide img.box {
+  padding: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 4px #ccc;
+  border-radius: 2px;
+}
+
+.remark-slide-content.dark {
+  background-color: #272822;
+  color: #fff;
+}
+
+/*
+
+  Full slide image background styles
+
+*/
+.remark-slide-content.img {
+  background-color: #272822;
+  color: #fff;
+  padding: 0;
+}
+.remark-slide-content.img p:first-of-type {
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  margin: 0;
+  padding: 0.25em;
+  font-size: 1.5em;
+}
+.remark-slide-content.img p:nth-of-type(2) {
+  display: inline;
+}
+.remark-slide-content.img img {
+  float: left;
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/
+}
+
+
+/*
+
+  Table of contents styles
+
+ */
+.remark-slide-content.toc ul,
+.remark-slide-content.toc ol {
+  font-size: 1.8em;
+  margin: 2em auto;
+  width: 80%;
+}
+.remark-slide-content.toc li {
+  line-height: 1;
+  margin-bottom: 0.4em;
+}
+
+/*
+
+  Large quote styles
+
+ */
+.remark-slide-content.med-quote p,
+.remark-slide-content.big-quote p {
+  line-height: 1;
+  margin: 1em auto 1em auto;
+  width: 90%;
+  text-align: left;
+}
+.remark-slide-content.big-quote p {
+  font-size: 1.8em;
+}
+.remark-slide-content.med-quote p {
+  font-size: 1.3em;
+}
+/*
+
+Tables
+
+*/
+table {
+  line-height: calc(1.5rem - 1px);
+  margin-bottom: -1px;
+
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+tfoot {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+tr th {
+  padding: 0.2em;
+  text-align: left;
+  border-bottom: 2px solid #dbdbdb;
+  border-top: none;
+}
+th:first-of-type,
+th:last-of-type,
+td:first-of-type,
+td:last-of-type {
+  border-left: none;
+  border-right: none;
+}
+th, td {
+  border: solid #dbdbdb;
+  border-width: 1px;
+  padding: 0 0.5ch;
+}
